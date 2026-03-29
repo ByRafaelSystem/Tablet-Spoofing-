@@ -1,3 +1,5 @@
+![Tablet Spoofing Banner](https://github.com/ByRafaelSystem/Tablet-Spoofing-/blob/main/IMG_20260329_164002.jpg?raw=true)
+
 🎮 TabletSpoof v4.2 — By Rafael System
 
 Magisk/KSU module that makes your phone identify itself as a Xiaomi Pad 6 Pro to the game. Result: tablet graphics, wider field of view and smoother experience.
