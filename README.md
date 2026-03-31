@@ -1,4 +1,4 @@
-[![Tablet Spoofing Banner](https://github.com/ByRafaelSystem/Tablet-Spoofing-/raw/main/IMG_20260329_164002.jpg?raw=true)](https://github.com/ByRafaelSystem/Tablet-Spoofing-)
+![Tablet Spoofing Banner](https://github.com/ByRafaelSystem/Tablet-Spoofing-/blob/main/IMG_20260330_210729.jpg?raw=true)
 
 # 🎮 TabletSpoof v4.9 — By Rafael System
 
