@@ -1,98 +1,114 @@
 ![Tablet Spoofing Banner](https://github.com/ByRafaelSystem/Tablet-Spoofing-/blob/main/IMG_20260330_210729.jpg?raw=true)
 
-# 🎮 TabletSpoof v4.9 — By Rafael System
+![TabletSpoof Banner](IMG_20260329_164002.jpg)
 
-Magisk/KSU module that makes your phone identify itself as a high-end gaming tablet or phone to the game.  
-Result: **tablet graphics, wider field of view, higher frame rates and smoother experience** — without permanently modifying your system.
 
----
 
-## 📦 Two Versions Available
+# 🎮 TabletSpoof v5.0 — By Rafael System
 
-### 🔹 TabletSpoof v4.9 — No DPI
-> Spoofs device props only. **Your screen resolution and display density remain unchanged.**
+Magisk / KernelSU / APatch module that makes your phone identify itself as a high-end tablet or gaming phone to your games.
+Result: tablet graphics, wider field of view, and real competitive advantage.
 
-✔ Recommended if your device already has a high DPI  
-✔ Recommended if you use a custom launcher or have display issues with DPI changes  
-✔ Safer for most devices  
+[
 
----
+![Version](https://img.shields.io/badge/Version-5.0-red)
 
-### 🔸 TabletSpoof v4.9 — With DPI
-> Spoofs device props **and changes the display density to 240 DPI** to better match the tablet layout.
+](https://github.com/ByRafaelSystem/Tablet-Spoofing-/releases)
+[
 
-✔ Recommended for phones with high native DPI (400+) that need scaling  
-✔ Better visual match for games that adapt UI based on DPI  
-⚠️ May affect system UI — revert by rebooting or toggling the module off  
+![License](https://img.shields.io/badge/License-Apache%202.0-blue)
 
----
+](LICENSE)
+[
 
-## 🎭 Supported Fake Devices
+![Root](https://img.shields.io/badge/Root-Magisk%20%7C%20KSU%20%7C%20APatch-green)
 
-| Profile | Type | DPI |
-|---|---|---|
-| Xiaomi Pad 6 Pro (liuqin) | Tablet | 240 |
-| REDMAGIC Astra | Phone | Custom |
-| ASUS ROG Phone 8 Pro | Phone | Custom |
-| RedMagic 9 Pro | Phone | Custom |
-| Black Shark 5 Pro | Phone | Custom |
+]()
 
 ---
 
 ## 📋 Requirements
 
-- Root with **Magisk** or **KernelSU**
-- Android **10 or higher**
-- Stock and custom ROMs supported (LineageOS, PixelExperience, crDroid, etc.)
+- Root with **Magisk**, **KernelSU** or **APatch**
+- Android 10 or higher
+- Compatible with stock and custom ROMs (LineageOS, PixelExperience, crDroid, etc.)
 
 ---
 
-## ⚙️ How It Works
+## 🖥️ Available device profiles
 
-The module automatically applies the spoofed props when you open a supported game and **reverts them when you close it**. No permanent changes to the system.
+| Profile | Device | Type | DPI |
+|---|---|---|---|
+| `xiaomi` | Xiaomi Pad 6 Pro | Tablet | 240 |
+| `redmagic` | REDMAGIC Astra (NP05J) | Gaming Phone | 240 |
+| `rog` | ASUS ROG Phone 8 Pro | Gaming Phone | 446 |
+| `redmagic9` | RedMagic 9 Pro (NX769J) | Gaming Phone | 446 |
+| `blackshark` | Black Shark 5 Pro | Gaming Phone | 392 |
 
-Toggle and game list are managed from the **KernelSU WebUI** or directly in **Magisk**.
+You can switch between profiles at any time from the **WebUI** without rebooting.
 
 ---
 
-## 🎯 Supported Games
+## ⚙️ How it works
+
+The module detects which app is in the foreground. When you open a game from your list, it automatically applies the selected profile's props using `resetprop`. When you close the game, everything reverts to the original state. **Zero permanent changes to the system.**
+
+The DPI toggle is optional — enable or disable it from the WebUI as needed.
+
+---
+
+## 🌐 WebUI (KernelSU / APatch)
+
+Manage the module directly from the graphical interface:
+
+- ✅ Enable / disable spoofing with a toggle
+- 🖥️ Select device profile (tablet or gaming phone)
+- 📱 View the real device detected at boot
+- 🎮 Manage your game list
+- 📐 Independent DPI toggle
+- 🌍 Language selector: **Spanish | English | Português | Bahasa Indonesia | Русский**
+
+> Profile changes apply on the fly via the flags system — no reboot required.
+
+---
+
+## 🎯 Supported games (default list)
 
 - Free Fire / Free Fire MAX
 - PUBG Mobile
-- Mobile Legends
+- Mobile Legends: Bang Bang
 - Call of Duty Mobile
 - Apex Legends Mobile
 
-> More games can be added directly from the WebUI.
+You can add any additional game from the WebUI by entering its package name.
 
 ---
 
-## 🌐 Languages
+## ✅ Tested on
 
-Module UI supports: **ES · EN · PT · ID · RU**
-
----
-
-## ✅ Tested On
-
-| Device | Android | ROM |
-|---|---|---|
-| Xiaomi Redmi Note 14 4G | Android 16 | Stock |
-
-> Have you tested on another device? Drop a comment with your results!
+- Xiaomi Redmi Note 14 4G — Android 14 — Stock ROM
 
 ---
 
-## ⚠️ Reporting Issues
+## 📦 Installation
 
-If something doesn't work, please include:
-- Your device model and ROM
+1. Download the `.zip` from [Releases](https://github.com/ByRafaelSystem/Tablet-Spoofing-/releases).
+2. Open **Magisk / KSU / APatch** → Modules → Install from storage.
+3. Select the file and flash it.
+4. Reboot your device.
+5. Open the WebUI (KSU/APatch) or the module in Magisk to configure.
+
+---
+
+## ⚠️ Reporting issues
+
+If something doesn't work, open an Issue with:
+- Device and ROM
 - Android version
-- Magisk or KernelSU version
-- Which version you installed (No DPI / With DPI)
+- Root manager (Magisk / KSU / APatch) and its version
 
 ---
 
 ## 📄 License
 
-Apache-2.0 — see [LICENSE](LICENSE)
+Apache License 2.0 — see [LICENSE](LICENSE)
